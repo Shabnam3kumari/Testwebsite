@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Health Care System</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #ebf748fb;
+    }
+    .header {
+      background-color: #0d45fd;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .section-title {
+      margin-top: 2rem;
+    }
+    .card {
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Digital Health Care System</h1>
+    <p>Empowering Healthcare with Technology</p>
+  </div>
+  <div class="container">
+    <h2 class="section-title">Patient information</h2>
+    <div class="row">
+  <form>
+    <label for="PatientName">Your Name :</label><br>
+    <input type="text" id="patientName" name="patientName" placeholder="Enter your name"><br><br>
+
+    <label for="DOB">Date Of Birth:</label><br>
+        <input type="date" id="DOB" name="DOB" required><br><br>
+    
+      <label for="PatientContactnumber">Patient Contact number:</label><br>
+    <input type="PatientContactnumber" pattern="\+91-[0-9]{10}"  id="PatientContactnumber" name="PatientContactnumber" placeholder="e.g., +91-9876543210" required><br><br> 
+
+     <label for="email">Email ID:</label><br>
+    <input type="email" id="email" name="email" placeholder="e.g., shabnam@example.com" required><br><br>
+
+    
+     <label for="PatientAddress">PatientAddress:</label>
+        <select id="PatientAddress" name="PatientAddress" multiple size="1">
+            <option value="Begusarai">Begusarai</option>
+            <option value="Muzzafrpur" selected>Begusarai</option>
+            <option value="Khagriya">Khagriya</option>
+            <option value="Patna">Patna</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Ramjanpur">Ramjanpur</option>
+            <option value="Khatopur">Khatopur</option>
+            <option value="Shima">Shima</option>
+        </select> 
+
+            <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <label for="PatientID">Your ID :</label><br>
+    <input type="text" id="patientID" name="patientID" placeholder="Enter your ID"><br><br> 
+
+     <input type="submit" value="Register">
+    <input type="reset" value="Clear Form">
+  </form>
+</body>
+</html>
+<div class="container">
+    <h2 class="section-title">Doctor information</h2>
+    <div class="row">
+  <form>
+    <label for="DoctortName">Your Name :</label><br>
+    <input type="text" id="DoctorName" name="DoctortName" placeholder="Enter your name"><br><br>
+
+    <label for="DoctorAge">Your Age :</label><br>
+    <input type="text" id="DoctorAge" name="DoctorAge" placeholder="Enter your age"><br><br>
+
+     <label for="DoctorContactnumber">Doctor Contact number:</label><br>
+    <input type="DoctorContactnumber" pattern="\+91-[0-9]{10}"  id="DoctorContactnumber" name="DoctorContactnumber" placeholder="e.g., +91-9876543210" required><br><br>
+
+  <label for="email">Email ID:</label><br>
+    <input type="email" id="email" name="email" placeholder="e.g., shabnam@example.com" required><br><br>
+
+    <label for="DoctorAddress">Your Address :</label><br>
+    <input type="text" id="DoctorAddress" name="DoctorAddress" placeholder="Enter your Address"><br><br> 
+       
+      <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <label for="DoctorID">Your ID :</label><br>
+    <input type="text" id="DoctortID" name="DoctorID" placeholder="Enter your ID"><br><br> 
+
+    <label for="DoctorSpecilizaton">Your Specilizaton :</label><br>
+    <input type="text" id="DoctortSpecilizaton" name="DoctorID" placeholder="Enter your Specilizaton"><br><br>
+    
+    <input type="submit" value="Submit Feedback">
+    <input type="reset" value="Clear Form">
+  </form>
+</body>
+</html>

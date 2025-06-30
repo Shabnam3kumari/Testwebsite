@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChiPi Technologies - Course Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #eef2f3;
+        }
+        h1 {
+            color: #333366;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #333366;
+            color: white;
+        }
+        ul {
+            background-color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        input[type="submit"] {
+            width: auto;
+            background-color: #333366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ChiPi Technologies</h1>
+
+    <p>
+        At ChiPi Technologies, our mission is to provide industry-relevant courses that empower individuals with the skills and knowledge needed to succeed in the digital era.
+    </p>
+
+    <h2>Course Catalog</h2>
+    <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Duration</th>
+            <th>Instructor</th>
+            <th>Fee</th>
+        </tr>
+        <tr>
+            <td>Full Stack Web Development</td>
+            <td>12 Weeks</td>
+            <td>Jane Doe</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>Data Science with Python</td>
+            <td>10 Weeks</td>
+            <td>John Smith</td>
+            <td>$450</td>
+        </tr>
+        <tr>
+            <td>AI & Machine Learning</td>
+            <td>8 Weeks</td>
+            <td>Emily Clark</td>
+            <td>$600</td>
+        </tr>
+        <tr>
+            <td>DevOps Essentials</td>
+            <td>6 Weeks</td>
+            <td>Michael Lee</td>
+            <td>$400</td>
+        </tr>
+        <tr>
+            <td>Cybersecurity Basics</td>
+            <td>8 Weeks</td>
+            <td>Sarah Patel</td>
+            <td>$500</td>
+        </tr>
+    </table>
+
+    <h2>Eligibility Criteria</h2>
+    <ul>
+        <li>Basic computer literacy</li>
+        <li>Good communication skills</li>
+        <li>High school diploma or equivalent</li>
+        <li>Keen interest in technology</li>
+        <li>Reliable internet access</li>
+    </ul>
+
+    <h2>Register Your Interest</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="course">Course Interested In:</label>
+        <select id="course" name="course" required>
+            <option value="">--Select--</option>
+            <option value="web">Full Stack Web Development</option>
+            <option value="data">Data Science with Python</option>
+            <option value="ml">AI & Machine Learning</option>
+            <option value="devops">DevOps Essentials</option>
+            <option value="cyber">Cybersecurity Basics</option>
+        </select>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

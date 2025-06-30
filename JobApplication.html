@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChiPi Technologies - Job Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #333366;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            max-width: 600px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .inline {
+            width: auto;
+            margin-right: 10px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            padding: 10px 15px;
+            margin-top: 15px;
+            background-color: #333366;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ChiPi Technologies - Job Application Form</h1>
+
+<form action="#" method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" class="inline"> <label for="male" class="inline">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" class="inline"> <label for="female" class="inline">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" class="inline"> <label for="other" class="inline">Other</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Job Details</legend>
+        <label for="position">Position Applied For:</label>
+        <select id="position" name="position" required>
+            <option value="">--Select Position--</option>
+            <option value="developer">Software Developer</option>
+            <option value="designer">UI/UX Designer</option>
+            <option value="qa">Quality Analyst</option>
+            <option value="pm">Project Manager</option>
+        </select>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume">
+
+        <label>Skills:</label>
+        <input type="checkbox" id="html" name="skills" value="HTML" class="inline"> <label for="html" class="inline">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="CSS" class="inline"> <label for="css" class="inline">CSS</label>
+        <input type="checkbox" id="js" name="skills" value="JavaScript" class="inline"> <label for="js" class="inline">JavaScript</label>
+        <input type="checkbox" id="python" name="skills" value="Python" class="inline"> <label for="python" class="inline">Python</label>
+        <input type="checkbox" id="sql" name="skills" value="SQL" class="inline"> <label for="sql" class="inline">SQL</label>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
