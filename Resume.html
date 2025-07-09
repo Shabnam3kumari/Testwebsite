@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resume Template</title>
    <p>
             <a href="./index.html">Home page</a>
         </p>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - Shabnam kumari</title>
   <style>
     * {
       margin: 0;
@@ -14,181 +14,160 @@
       box-sizing: border-box;
       font-family: 'Segoe UI', sans-serif;
     }
-
     body {
-      display: flex;
-      min-height: 100vh;
-      background-color: #f4f4f4;
+      background: #f0f0f0;
+      padding: 20px;
     }
-
-    .left {
-      width: 30%;
-      background-color: #2f3e4d;
-      color: white;
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .left-panel {
+      width: 35%;
+      background: #1a1a2e;
+      color: #fff;
       padding: 30px;
     }
-
     .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-image: url('images/profile.jpg'); 
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto 20px auto;
-}
-
-    .section {
-      margin-bottom: 30px;
-    }
-
-    .section h2 {
-      font-size: 18px;
-      padding: 8px 0;
-      border-bottom: 2px solid #f05454;
-      margin-bottom: 10px;
-    }
-
-    .section p,
-    .section ul {
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .section ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    .section ul li {
-      padding: 5px 0;
-    }
-
-    .tag {
-      font-weight: bold;
-    }
-
-    .languages,
-    .skills,
-    .hobbies {
-      margin-top: 10px;
-    }
-
-    .bar {
-      background: #444;
-      border-radius: 4px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #f5c518;
+      background: url('https://via.placeholder.com/120') no-repeat center center/cover;
       overflow: hidden;
-      height: 10px;
-      margin-top: 5px;
+      margin: 0 auto 30px;
     }
-
-    .bar-fill {
-      background: #4caf50;
-      height: 100%;
+    .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     }
-
-    .right {
-      width: 70%;
-      padding: 40px;
-      background-color: white;
+    .left-panel h2 {
+      margin-top: 20px;
+      font-size: 16px;
+      border-left: 5px solid #f5c518;
+      padding-left: 10px;
+      text-transform: uppercase;
     }
-
-    .right h1 {
-      font-size: 32px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-
-    .right .block {
-      margin-bottom: 30px;
-    }
-
-    .right .block h2 {
-      font-size: 20px;
-      color: #f05454;
-      margin-bottom: 10px;
-    }
-
-    .right .block p {
+    .section {
+      margin: 10px 0;
       font-size: 14px;
       line-height: 1.6;
+    }
+    .right-panel {
+      width: 65%;
+      padding: 30px;
+      background: #fff;
+    }
+    .header h1 {
+      font-size: 28px;
       margin-bottom: 5px;
     }
-
-    .highlight {
-      color: #f05454;
+    .header h1 span {
       font-weight: bold;
+      color: #000;
+    }
+    .header p {
+      color: gray;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .right-panel section {
+      margin-bottom: 20px;
+    }
+    .right-panel h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-left: 5px solid #f5c518;
+      padding-left: 10px;
+      text-transform: uppercase;
+    }
+    .right-panel p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .skills ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 20px;
+      padding-left: 0;
+    }
+    .skills li {
+      font-size: 14px;
+      color: #333;
     }
   </style>
 </head>
 <body>
-
-  <div class="left">
-    <div class="profile-pic"><img src="images/profile.jpg" class="c:\Users\richa\Downloads\1b212319-f472-4d8a-8509-82ea2ebdba7b.jpg" alt="Profile Photo"></div>
-
-    <div class="section">
-      <h2>CONTACT</h2>
-      <p><span class="tag">Address:</span> Begusarai, City</p>
-      <p><span class="tag">Phone:</span> +91-6287719603</p>
-      <p><span class="tag">Email:</span> shabnamshine231@email.com</p>
-      <p><span class="tag">Website:</span> www.google.com</p>
-    </div>
-
-    <div class="section">
-      <h2>LANGUAGES</h2>
-      <ul>
-        <li>English</li>
-        <li>Hindi</li>
-        
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>SKILLS</h2>
-      <p>DBMS</p>
-      <div class="bar"><div class="bar-fill" style="width: 80%;"></div></div>
-      <p>HTML</p>
-      <div class="bar"><div class="bar-fill" style="width: 70%;"></div></div>
-      <p>CSS</p>
-      <div class="bar"><div class="bar-fill" style="width: 60%;"></div></div>
-      <p>ADCA</p>
-      <div class="bar"><div class="bar-fill" style="width: 60%;"></div></div>
-    </div>
-
-    <div class="section">
-      <h2>HOBBIES</h2>
-      <ul class="hobbies">
-        <li>🎵 Music</li>
-        <li>📷 Photography</li>
-        <li>🚴 Travling</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="right">
-    <h1>SHABNAM KUMARI</h1>
-
-    <div class="block">
-      <h2>Personal Profile</h2>
-      <p>I am a motivated and detail-oriented student currently pursuing a Master of Computer Applications (MCA) from Ganga Global Institute of Management Studies, affiliated with Aryabhatta Knowledge University (AKU), Patna. With a strong foundation in computer science and software development, I am passionate about applying my technical knowledge to real-world challenges. I possess excellent problem-solving abilities, strong communication skills, and a collaborative spirit that helps me thrive in team environments. My goal is to contribute to the field of information technology through continuous learning and innovative thinking.</p>
-    </div>
-
-    
-<div class="block">
+  <div class="container">
+    <div class="left-panel">
+      <div class="profile-pic">
+      <img src="../../image/image.png"alt="Profile Picture"></div>
       <h2>Education</h2>
-      <p><span class="highlight">2023 - Present:</span> MCA, Ganga Global Institute, AKU</p>
-      <p><span class="highlight">2020 - 2023:</span> BSC, S.B.S.S College LNMU</p>
-      <p><span class="highlight">2018 - 2020:</span> 12th, S.S.S Mahila college,LNMU</p>
-       <p><span class="highlight">2018 - 2020:</span> 10th, J.K High School, LNMU</p>
+      <div class="section">
+        <p><strong>10th</strong><br/>Lalit Narayan University<br/>2018</p>
+        <p><strong>12th</strong><br/>Lalit Narayan University<br/>2020</p>
+        <p><strong>B.SC</strong><br/>Lalit Narayan University<br/>2020-2023</p>
+        <p><strong>MCA</strong><br/>Araybhatt Knowledge University<br/>2023-2025</p>
+      </div>
+
+      <h2>Contact</h2>
+      <div class="section">
+        <p><strong>Address</strong><br/>Begusarai</p>
+        <p><strong>Phone</strong><br/>+6566564345</p>
+        <p><strong>Email</strong><br/>shabnamsingh@gmail.com</p>
+        <p><strong>Website</strong><br/>www.websitehere.com</p>
+      </div>
+
+      <h2>Reference</h2>
+      <div class="section">
+        <p><strong>Sarah Taylor</strong><br/>Director / Company Name<br/>T: +1 234 56789</p>
+        <p><strong>Mickie Anderson</strong><br/>Web Developer / Company<br/>T: +1 234 56789</p>
+      </div>
     </div>
 
-    <div class="block">
-      <h2>Work Experience</h2>
-      <p><span class="highlight">2023 - Present:</span> Digital Health Care PPT</p>
-      <p><span class="highlight"> 2023:</span> Website Design</p>
+    <div class="right-panel">
+      <div class="header">
+        <h1><span>SHABNAM</span> KUMARI</h1>
+        <p>Professional Title</p>
+      </div>
+
+      <section class="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </section>
+
+      <section class="work">
+        <h2>Work Experience</h2>
+        <div>
+          <p><strong>2013–2014</strong> — Job Position Here<br/>Company Name / California USA</p>
+          <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+          <p><strong>2014–2017</strong> — Job Position Here<br/>Company Name / California USA</p>
+          <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+          <p><strong>2017–Present</strong> — Job Position Here<br/>Company Name / California USA</p>
+          <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>Software Skill</h2>
+        <ul>
+          <li>ADCA</li>
+          <li>DBMS</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVA</li>
+          <li>C Language</li>
+        </ul>
+      </section>
     </div>
   </div>
-
-    </body>
+</body>
 </html>
